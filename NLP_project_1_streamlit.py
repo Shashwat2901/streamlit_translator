@@ -5,7 +5,8 @@ import streamlit as st
 
 import pandas as pd 
 import plotly.express as px 
-
+import nltk 
+nltk.download()
 #Using corpus swadesh
 from nltk.corpus import swadesh
 
