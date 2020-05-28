@@ -13,6 +13,7 @@ from nltk.corpus import swadesh
 
 #Heading to be provided with the help of streamlit 
 st.title('Translate English words to various languages')
+st.markdown('If using mobile please tap on top left arrrow button to visualize sidebar')
 st.sidebar.title('Translate English words to various languages')
 
 st.markdown('This is a dashboard where you can hover over the country in a map to know the language codes of that place\'s native language and then translate English words')
@@ -57,7 +58,7 @@ if  st.sidebar.checkbox('Check to show the Map' ,False):
 
 
 #Checkbox to show the dictionary options
-if  st.sidebar.checkbox('Check to show the dictionary options' ,True):
+if  st.sidebar.checkbox('Check to show the dictionary options' ,False):
 	#Select Box to select language codes
 	select = st.sidebar.selectbox('Select language to convert English words to' ,(languages), key =1)
 	st.subheader('The converted English words of the selected language are following:')
